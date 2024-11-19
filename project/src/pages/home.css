@@ -1,0 +1,177 @@
+.App {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .container-one {
+    flex: 3; /* 25% of the width */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0b0b;
+    position: relative;
+  }
+  
+  .top-right-image {
+    position: absolute;
+    top: 10px; /* Adjust the top distance as needed */
+    left: 190px; /* Adjust the right distance as needed */
+    width: 50px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  #hi {
+    background-color: #5a5757;  /* Widget background color */
+    border-radius: 12px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+    padding: 20px;               /* Inner padding for content */
+    width: 80%;                  /* Width relative to parent container */
+    max-width: 300px;            /* Optional: Limit the maximum width */
+    margin-top: 50px;            /* Space from top of container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: 0;
+  }
+  
+  #hi h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+  }
+  
+  h1, p {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  #code {
+    color: white;
+  }
+  
+  #ds {
+    color: rgb(95, 240, 33);
+  }
+  
+  /* Styling for CODE.DS heading */
+  .container-one h2 {
+    top: 0;
+    color: rgb(95, 240, 33);
+    position: absolute;
+  }
+  
+  /* Subheading styling */
+  .container-one .subheading {
+    color: rgb(95, 240, 33);
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .container-one .sub {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Flexbox to align CODE. and DS side-by-side */
+  .code-ds {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Optional: Space between CODE. and DS */
+  }
+  
+  .container-two {
+    flex: 5; /* 75% of the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #716e6e89;
+    position: relative;
+  }
+  
+  /* Logout Button styling */
+  .logout-button {
+    position: absolute;
+    top: 10px;
+    right: 20px; /* Adjust as needed */
+    background-color: #ff3333; /* Red background for logout */
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+  
+  .lol {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 20px; /* Add space between problem items */
+    padding: 20px;
+    border: 2px solid rgba(26, 24, 24, 0.507);
+    border-radius: 20px;
+    background-color: #0d0b0b;
+    color: rgb(247, 244, 244);
+    width: 480px; /* Box width */
+    margin: 20px auto; /* Center horizontally */
+    text-align: center;
+  }
+  
+  .problem-item {
+    display: flex;
+    flex-direction: column; /* Stack text and button */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Add space between the heading and button */
+  }
+  
+  .problem-item h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .problem-item button {
+    font-size: 13px;
+    color: rgb(97, 222, 14);
+    background-color: #60625f;
+    border-radius: 5px;
+    border: 2px solid #60625f;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .problem-item button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .problem-item button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+  }
+  
+  #outbox {
+    border: 2px solid rgba(247, 245, 245, 0.507); /* White outline */
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(247, 244, 244); /* Text color */
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-top: 120px;
+    background-color: #403b3b7a;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  

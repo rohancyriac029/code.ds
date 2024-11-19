@@ -1,0 +1,206 @@
+/* Ensure the page is split into two halves */
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  flex-direction: row; /* Horizontally aligned panes */
+}
+
+/* Left Pane (description part) */
+.left-pane-1 {
+  width: 50%;
+  padding: 30px;
+  background-color: #f4f5f7;
+  overflow-y: auto;
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  scrollbar-width: thin;
+}
+
+.left-pane-1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left-pane-1::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.image-heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-left-image {
+  margin-right: 15px;
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+/* Title and Section Descriptions */
+h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* Example Section */
+.example {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 90%; /* Prevent it from being too wide */
+  overflow-x: auto; /* Horizontal scroll for content overflow */
+}
+
+.example h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.example p {
+  margin: 5px 0;
+  font-family: 'Courier New', monospace;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-radius: 5px;
+  word-break: break-word; /* Break long words in code */
+}
+
+/* Constraints Section */
+.constraints {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.constraints li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.constraints li span {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+/* Right Pane - Monaco Editor */
+.right-pane-1 {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-sizing: border-box; /* Include padding in total width/height */
+}
+
+.run-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start;
+  transition: background-color 0.2s;
+  border-radius: 9px;
+}
+
+.run-button:hover {
+  background-color: darkgreen;
+}
+
+.clear-button {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  margin-left: 20px;
+  border-radius: 9px;
+}
+
+.clear-button:hover {
+  background-color: darkred;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px; /* Add space between buttons */
+}
+
+.output-container {
+  margin-top: 10px;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  overflow-y: auto;
+}
+
+.output {
+  white-space: pre-wrap; /* Preserve formatting */
+  font-size: 14px;
+  color: #333;
+}
+
+/* Improved styling for checkboxes */
+.checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.checkbox:checked {
+  background-color: #4caf50; /* Green when checked */
+  border-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M20.292 5.292a1 1 0 0 1 1.415 1.415l-10 10a1 1 0 0 1-1.415 0l-5-5a1 1 0 1 1 1.415-1.415L10 14.586l9.292-9.294z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.constraints {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.constraints li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.constraints li span {
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 1.4;
+}

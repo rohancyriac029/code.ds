@@ -1,0 +1,103 @@
+
+/* Container for split view */
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Pane (description part) */
+  .left-pane-2 {
+    width: 50%;
+    padding: 30px;
+    background-color: #f4f5f7;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .left-pane-2::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .left-pane-2::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* Right Pane - Monaco Editor */
+  .right-pane-2 {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .button-container {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .run-button,
+  .clear-button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+  }
+  
+  .run-button {
+    background-color: green;
+    transition: background-color 0.2s;
+  }
+  
+  .run-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .clear-button {
+    background-color: red;
+    margin-left: 20px;
+    transition: background-color 0.2s;
+  }
+  
+  .clear-button:hover {
+    background-color: darkred;
+  }
+  
+  .output-container {
+    margin-top: 10px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    overflow-y: auto;
+  }
+  
+  .output {
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .status-tab {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .status-tab.success {
+    background-color: #4CAF50;
+  }
+  
+  .status-tab.failure {
+    background-color: #f44336;
+  }
+  

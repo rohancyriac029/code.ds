@@ -1,0 +1,81 @@
+/* Container for the two-pane layout */
+.welcome-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Left Pane (Image side) */
+.left-pane {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d0052;
+}
+
+.left-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Pane (Form side) */
+.right-pane {
+  width: 50%;
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Form Styling */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* Sign In Button */
+.signin-button {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4CAF50;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #45a049;
+}
